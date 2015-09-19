@@ -31,7 +31,7 @@
   // context is a config object of properties to be used as vars inside the new scope
   function runInContext(src, context/*, filename*/) {
     
-    var code = '';
+    var code = '"use strict"\n';
     
     // before - set local scope vars from each context property
     for (var key in context) {
